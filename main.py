@@ -24,7 +24,7 @@ class SimpleCryptoBot(QCAlgorithm):
         self.set_start_date(2023, 1, 1)
         # Total starting capital: $90.90 (ETH) + $65.70 (SOL) = $156.60
         self.set_cash("USD", 156.60)
-        self.set_brokerage_model(BrokerageName.KRAKEN, AccountType.CASH)
+        self.set_brokerage_model(BrokerageName.COINBASE, AccountType.CASH)
 
         self._eth_symbol = self.add_crypto("ETHUSD", Resolution.MINUTE).symbol
         self._sol_symbol = self.add_crypto("SOLUSD", Resolution.MINUTE).symbol
